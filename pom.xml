@@ -25,7 +25,7 @@
 					</descriptorRefs>
 					<archive>
 						<manifest>
-							<mainClass>Tester</mainClass>
+							<mainClass>executors.Tester</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
