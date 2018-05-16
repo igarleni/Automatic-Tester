@@ -5,9 +5,10 @@ object MapHandler {
   def get(map: Map[String, String], key: String): String =
   {
     val found = map.get(key)
+    
     return found match
     {
-      case Some(value) => value
+      case Some(value) => value.toString
       case _ => throw new Exception("Item not Found in map!")
     }
   }
