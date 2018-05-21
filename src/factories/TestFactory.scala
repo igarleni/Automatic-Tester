@@ -1,11 +1,23 @@
 package factories
 
 import persistence._
+import launchers._
+import IO._
+import scala.collection.mutable.Map
 
 object TestFactory 
 {
-  def generateTests(testsPath: String): List[Test] =
+  def generateTests(testsPath: String, appLauncher: Launcher): List[Test] =
   {
-    return null //TODO
+    val inputFiles = ConfigurationReader.readTestsConfiguration(testsPath)
+    val testList = mergeByTestID(inputFiles)
+    for(test <- testList) test.validate()
+    testList
   }
+  
+  private def mergeByTestID(inputFiles: List[InputFile]): List[Test] =
+  {
+    return null
+  }
+  
 }

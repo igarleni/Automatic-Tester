@@ -1,8 +1,8 @@
 package utils
 
-object MapHandler {
+class MapHandler (map: Map[String,String]) {
   
-  def get(map: Map[String, String], key: String): String =
+  def get(key: String): String =
   {
     val found = map.get(key)
     
