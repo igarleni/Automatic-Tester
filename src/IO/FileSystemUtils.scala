@@ -26,10 +26,10 @@ object FileSystemUtils
     val file = new File(path)
     if (file.exists && file.isDirectory)
     {
-        file.listFiles.filter(_.isFile).toList
+      file.listFiles.filter(_.isFile).toList
     } else 
     {
-        List[File]()
+        Nil
     }
   }
 }

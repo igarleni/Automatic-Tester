@@ -22,7 +22,7 @@ object Tester
     }
     catch
     {
-      case e: Exception => 
+      case e => 
         {
           println("\nERROR: " + e.getMessage)
           val stackTrace = e.getStackTrace

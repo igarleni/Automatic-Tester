@@ -6,4 +6,6 @@ class SimpleTest (val testID:Int) extends Test{
   {
     return null
   }
+  
+  override def validate() {}
 }
